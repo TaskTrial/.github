@@ -1,0 +1,33 @@
+name: Setup Repository Labels
+
+on:
+  # Run when a new repository is created
+  repository_dispatch:
+    types: [created]
+  # Can also be run manually
+  workflow_dispatch:
+  # Run when this workflow is first added to the repository
+  push:
+    paths:
+      - ".github/workflows/setup-labels.yml"
+      - ".github/scripts/create-labels.js"
+
+jobs:
+  setup-labels:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 16
+
+      - name: Install dependencies
+        run: npm install @octokit/rest
+
+      - name: Run labels script
+        run: node .github/scripts/create-labels.js
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
