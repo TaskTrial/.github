@@ -6,7 +6,8 @@ This repository contains organization-wide GitHub templates and workflows for Ta
 
 ### CI/CD Workflows
 
-- `workflow-templates/standard-ci.yml` - Standard CI pipeline for Node.js projects
+- `workflows/ci.yml` - Standard CI pipeline for organization projects
+- `workflows/setup-labels.yml` - for labels setup
 
 ### Issue Templates
 
@@ -30,7 +31,7 @@ This repository contains organization-wide GitHub templates and workflows for Ta
 
 ### For New Repositories
 
-1. When creating a new repository in the TaskTrial organization, these templates will be automatically available.
+1. When creating a new repository in the `TaskTrial` organization, these templates will be automatically available.
 2. The labels script will run automatically when a new repository is created.
 
 ### For Existing Repositories
@@ -73,4 +74,4 @@ To suggest changes to these templates:
 
 ## License
 
-[Insert your organization's license here]
+[MIT LICENSE](./LICENSE)
