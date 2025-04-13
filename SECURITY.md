@@ -15,7 +15,7 @@ currently being supported with security updates.
 We take the security of TaskTrial seriously. If you believe you've found a security vulnerability, please follow these steps:
 
 1. **Do not disclose the vulnerability publicly**
-2. **Email our security team** at [security@tasktrial.example.com](mailto:security@tasktrial.example.com) with:
+2. **Email our security team** at [tasktrial27@gmail.com](mailto:tasktrial27@gmail.com) with:
    - A description of the vulnerability
    - Steps to reproduce
    - Potential impact
